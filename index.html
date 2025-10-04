@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+     
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="theme-icon">🌙</span>
+    </button>
+    
+    <div class="stopwatch-card">
+      <h1 class="title">Stopwatch</h1>
+      <div class="display" id="display">00:00:00</div>
+      <div class="controls">
+        <button class="btn btn-start" id="startBtn">Start</button>
+        <button class="btn btn-stop" id="stopBtn">Stop</button>
+         
+        <button class="btn btn-lap" id="lapBtn">Lap</button>
+        <button class="btn btn-reset" id="resetBtn">Reset</button>
+      </div>
+      
+       
+      <div class="laps-container" id="lapsContainer">
+        <h2 class="laps-title">Lap Times</h2>
+        <div class="laps-list" id="lapsList"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
